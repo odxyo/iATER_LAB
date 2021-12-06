@@ -1,7 +1,7 @@
 package CodingTestBasic;
 
 public class Algo10NbyNAnotherWay {
-
+kjkjljjj
 	public static void main(String[] args) {
 		int n = 6;
 		int arr[][] = new int[n][n];
