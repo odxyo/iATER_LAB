@@ -1,0 +1,51 @@
+class SimpleCalculator:
+
+    
+    @staticmethod
+    def add(fristnumber,secondnum):
+        return fristnumber,secondnum
+
+    @staticmethod
+    def subtract(fristnumber,secondnum):
+        minuss=fristnumber - secondnum
+        return  minuss
+    @staticmethod
+    def mutiply(fristnumber,secondnum):
+        mutiply=(fristnumber * secondnum)
+        return mutiply
+
+    @staticmethod
+    def divid(fristnumber,secondnum):
+        divid=(fristnumber / secondnum)
+        return divid
+
+
+
+calculaor=SimpleCalculator()
+
+print(calculaor.add(6,4))
+print(calculaor.subtract(6,4))
+print(calculaor.mutiply(6,4))
+print(calculaor.divid(6,4))
+
+
+
+print("------------- Menu Item-------------")
+
+
+class MenuItem:
+
+    def __init__(self,nameMenu,price):
+        self.nameMenu=nameMenu
+        self.price=price
+    def __str__(self):
+        return ("You have ordered: '{}' The price is: {}".format(self.nameMenu,self.price))
+
+
+burger=MenuItem("hunbuger",4000)
+coke=MenuItem("Coke",1500)
+fries=MenuItem("French fries",45000)
+
+print(burger)
+print(coke)
+print(fries)
